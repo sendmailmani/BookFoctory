@@ -1,0 +1,21 @@
+
+
+
+CREATE TABLE [dbo].[Login] (
+    [UserId]   INT           IDENTITY (1, 1) NOT NULL,
+    [UserName] VARCHAR (100) NULL,
+    [Password] VARCHAR (100) NULL,
+    [IsAdmin]  BIT           NOT NULL
+);
+
+CREATE TABLE [dbo].[BookDetails]
+(
+	[BookId] INT NOT NULL PRIMARY KEY IDENTITY,
+    [BookName] VARCHAR(100) NULL, 
+	[BookCategory] Varchar(100) Null,
+    [AuthorName] varchar(100) NULL,
+	[Edition] varchar(50) null,
+	[Price] varchar(50)
+)
+
+
